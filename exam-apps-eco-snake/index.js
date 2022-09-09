@@ -26,6 +26,8 @@ app.use(express.json());
 _____________________________________________ */
 
 
+
+
 /*___________________________________________
 
 2) Create the socket methods to listen the events and emit a response
@@ -33,8 +35,26 @@ It should listen for directions and emit the incoming data.
 _____________________________________________ */
 
 ioServer.on('connection', (socket) => {
+   
+socket.on ('/controller' , public-controller => {
+    socket.broadcast.emit ('/display' , public-display ) => {
+        console.log('Connected')
+    })
+
+    Const httpServer = expressApp.listen (5050, () => {
+        console.log('http://localhost:5050/controller')
+        console.log('http://localhost:5050/display')
+})
+
+        
+    
+    
+})
+    
+    
 
 
+ 
 });
 
 /*___________________________________________
